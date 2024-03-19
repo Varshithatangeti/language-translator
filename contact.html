@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TRANSLATOR</title>
+    </head>
+    <body background= "C:\Users\rutik\Desktop\python\static\images\background.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color:black;
+  overflow:auto;
+}
+
+.navbar a {
+  float:right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: hsl(0, 7%, 26%);
+}
+
+.active {
+  background-color: #1ba31e;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display:block;
+  }
+}
+</style>
+<body>
+<div class="navbar">
+  <a href="/login"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a href="/contact"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="/about"><i class="fa fa-fw fa-info-circle"></i>About us</a>
+  <a class="active" href="/PN2k23"><i class="fa fa-fw fa-home"></i> Home</a> 
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Us Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("C:/Users/rutik/Desktop/python/static/image/backgroundimage.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color:aqua;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .container .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .container .content .left-side,
+        .container .content .right-side {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .address,
+        .phone,
+        .email {
+            margin-bottom: 20px;
+        }
+
+        .address i,
+        .phone i,
+        .email i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .topic {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .text {
+            margin-top: 5px;
+        }
+
+        .right-side .topic-text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .right-side p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Form styles */
+        .input-container {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border:darkblue;
+            border-radius: 5px;
+        }
+
+        .send-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .send-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Form output styles */
+        .output-container {
+            margin-top: 20px;
+        }
+
+        #output-text {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class="left-side">
+            <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Address</div>
+                <div class="text">ROOM NO:236</div>
+                <div class="text">KIEW</div>
+                <div class="text">korangi, kakinada</div>
+            </div>
+            <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Phone</div>
+                <div class="text">8977196271</div>
+                <div class="text">8333825701</div>
+                <!-- Add more phone numbers here -->
+            </div>
+            <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text">potnururutikasri@gmail.com</div>
+                <div class="text">valavalasrujana2005@gmail.com</div>
+                <!-- Add more email addresses here -->
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>If you have any work for me or any types of queries related to this website, you can contact us here. It's our pleasure to help you.</p>
+            <!-- Add your contact form here -->
+        </div>
+    </div>
+</div>
+</body>
+</html>
